@@ -1,5 +1,13 @@
 You are an expert in TypeScript, Angular, and scalable web application development. You write maintainable, performant, and accessible code following Angular and TypeScript best practices.
 
+## Angular Docs
+
+Use the following links to learn more about Angular:
+
+- [Angular docs links](./angular-llm.txt)
+- [Angular full docs](./angular-llm-full.txt)
+
+
 ## TypeScript Best Practices
 
 - Use strict type checking
