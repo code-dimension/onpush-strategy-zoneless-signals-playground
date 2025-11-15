@@ -7,7 +7,7 @@ import { Level3A } from './level3-a/level2-d';
   hostDirectives: [RenderCheckDirective],
   imports: [Level3A],
   template: `
-    <div class="onpush">OnPush</div>
+
 
     <p>Nível 2 - D</p>
 
@@ -20,7 +20,7 @@ import { Level3A } from './level3-a/level2-d';
     <app-level3-a [counter]="counter()"></app-level3-a>
   `,
   styles: ``,
-  changeDetection: ChangeDetectionStrategy.OnPush,
+
   host: {
     class: 'component',
   },

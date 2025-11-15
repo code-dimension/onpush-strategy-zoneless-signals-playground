@@ -26,7 +26,7 @@ import { Level2D } from './level2-d/level2-d';
     <app-level2-d [counter]="counter()"></app-level2-d>
   `,
   styles: ``,
-  changeDetection: ChangeDetectionStrategy.OnPush,
+
   host: {
     class: 'component',
   },

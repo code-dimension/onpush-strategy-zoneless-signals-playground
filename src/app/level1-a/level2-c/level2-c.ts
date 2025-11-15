@@ -6,7 +6,7 @@ import { RenderCheckDirective } from '../../render-check.directive';
   hostDirectives: [RenderCheckDirective],
   imports: [],
   template: `
-    <div class="onpush">OnPush</div>
+
 
     <p>Nível 2 - C</p>
 
@@ -17,7 +17,7 @@ import { RenderCheckDirective } from '../../render-check.directive';
     </p>
   `,
   styles: ``,
-  changeDetection: ChangeDetectionStrategy.OnPush,
+
   host: {
     class: 'component',
   },
