@@ -8,6 +8,8 @@ import { RenderCheckDirective } from './render-check.directive';
   imports: [Level1A, Level1B],
   hostDirectives: [RenderCheckDirective],
   template: `
+    <div class="onpush">OnPush</div>
+
     <p>Raiz</p>
 
     <p>Counter: {{ counter() }}</p>

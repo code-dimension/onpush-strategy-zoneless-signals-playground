@@ -6,6 +6,8 @@ import { RenderCheckDirective } from '../../render-check.directive';
   hostDirectives: [RenderCheckDirective],
   imports: [],
   template: `
+    <div class="onpush">OnPush</div>
+
     <p>Nível 2 - D</p>
 
     <p>Recebe Counter: {{ counter() }}</p>
