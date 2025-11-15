@@ -10,6 +10,8 @@ import { Level2D } from './level2-d/level2-d';
   hostDirectives: [RenderCheckDirective],
   imports: [Level2A, Level2B, Level2C, Level2D],
   template: `
+    <div class="onpush">OnPush</div>
+
     <p>Nível 1 - A</p>
 
     <p>Recebe Counter: {{ counter() }}</p>
