@@ -2,11 +2,12 @@ import { ChangeDetectionStrategy, ChangeDetectorRef, Component, ElementRef, inje
 import { Level1A } from './level1-a/level1-a';
 import { Level1B } from './level1-b/level1-b';
 import { RenderCheckDirective } from './render-check.directive';
+import { RenderCheckRootDirective } from './render-check-root.directive';
 
 @Component({
   selector: 'app-root',
   imports: [Level1A, Level1B],
-  hostDirectives: [RenderCheckDirective],
+  hostDirectives: [RenderCheckRootDirective],
   template: `
     <p>Raiz</p>
 
@@ -26,11 +27,10 @@ import { RenderCheckDirective } from './render-check.directive';
   `,
   host: {
     class: 'component'
-  },
-  changeDetection: ChangeDetectionStrategy.OnPush
+  }
 })
 export class App {
-  renderCheckDirective = inject(RenderCheckDirective);
+  renderCheckDirective = inject(RenderCheckRootDirective);
 
   protected readonly counter = signal(0);
 

@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject, input } from '@angular/core';
 import { RenderCheckDirective } from '../../render-check.directive';
 
 @Component({
@@ -9,7 +9,7 @@ import { RenderCheckDirective } from '../../render-check.directive';
     <p>Nível 2 - A</p>
 
     <p>
-      Não tem input ou output
+      Recebe Counter: {{  counter() }}
     </p>
 
     {{ renderCheckDirective.renderHash() }}
@@ -21,4 +21,6 @@ import { RenderCheckDirective } from '../../render-check.directive';
 })
 export class Level2A {
   renderCheckDirective = inject(RenderCheckDirective);
+
+  counter = input.required<number>();
 }

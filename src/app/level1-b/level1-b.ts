@@ -1,10 +1,11 @@
 import { ChangeDetectionStrategy, Component, inject, input } from '@angular/core';
 import { RenderCheckDirective } from '../render-check.directive';
+import { Level2A } from "./level2-a/level1-b";
 
 @Component({
   selector: 'app-level1-b',
   hostDirectives: [RenderCheckDirective],
-  imports: [],
+  imports: [Level2A],
   template: `
     <p>Nível 1 - B</p>
 
@@ -13,9 +14,10 @@ import { RenderCheckDirective } from '../render-check.directive';
     </p>
 
     {{ renderCheckDirective.renderHash() }}
+
+    <app-level2-a [counter]="counter()"></app-level2-a>
   `,
   styles: ``,
-  changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     class: 'component',
   },

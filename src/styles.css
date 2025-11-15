@@ -9,3 +9,10 @@
 .checked {
   border-color: red;
 }
+
+.onpush {
+  width: fit-content;
+  background: pink;
+  padding: 8px;
+  border-radius: 10px;
+}
